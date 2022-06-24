@@ -1,3 +1,2 @@
-module composition-GO
-
+module "github.com/RaimonxDev/composition-GO"
 go 1.18
