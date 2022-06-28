@@ -11,14 +11,15 @@ func main() {
 
 	i := invoice.New(
 		"chile", "osorno",
-		//usamos la funcion constructora
+		//usamos la funcion constructor
 		customer.New("Ramon", "arturo pratt", "9815144452"),
-		[]invoiceItem.Item{
+		invoiceItem.NewItems(
 			// Usamos la funcion constructora
-			invoiceItem.New(1, "Curso de go", 12.34),
+			invoiceItem.New(1, "Curso de go", 60.50),
 			invoiceItem.New(2, "Curso de avanzado con go", 70.34),
 			invoiceItem.New(3, "testing de go", 50.34),
-		})
+		),
+	)
 
 	// Calculamos el total de la factura
 
